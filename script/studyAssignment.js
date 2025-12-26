@@ -30,6 +30,18 @@ function createAssignment() {
         return;
     }
 
+    // Date validation
+    const today = new Date();
+    const selectedDate = new Date(Due);
+
+    const maxDate = new Date();
+    maxDate.setFullYear(today.getFullYear() + 1);
+
+    if (selectedDate < today || selectedDate > maxDate) {
+        alert(`Please select a valid due date between ${today.toISOString().split("T")[0]} and ${maxDate.toISOString().split("T")[0]}.`);
+        return;
+    }
+
     // Put into list
     assignments.push({
         name: Name,
