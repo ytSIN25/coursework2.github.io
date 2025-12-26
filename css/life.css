@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&family=Shadows+Into+Light+Two&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url(../images/lifeBackground.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: "Shadows Into Light Two", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    background-color: rgba(0,0,0,0.6);
+    padding: 0.5vh 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 15px 50px rgba(0,0,0,0.6);
+    font-size: 8vw;
+}
+
+.hero{
+    margin: 10vh 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.hero img{
+    width: 40vw;
+    margin-right: 2vw;
+}
+
+.description{
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.description h1{
+    font-size: 3vw;
+}
+
+.description p{
+    font-size: 1.2vw;
+    color: #c0c0c0;
+}
+
+.lifeTools{
+    padding: 6vh 12vw;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400;
+}
+
+.lifeTools h1{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 4vh;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background: #dbdbdb;
+    color: black;
+    border-radius: 1.5vw;
+    padding: 2vh 2vw 2vh 10vw;
+    margin-bottom: 2vh;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    background: #ffffff;
+}
+
+.card:hover span{
+    color: black;
+    font-size: 3vw;
+}
+
+.card img{
+    width: 8vw;
+    height: 8vw;
+    background: white;
+    border-radius: 999px;
+    margin-right: 2vw;
+}
+
+.card h3{
+    font-size: 2.3vw;
+}
+
+.card p{
+    font-size: 1.1vw;
+    color: #666;
+}
+
+.card span{
+    margin-left: auto;
+    font-size: 2vw;
+    color: #777;
+    transition: font-size 0.5s ease;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 12vw;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        padding: 0 2vw;
+        margin-bottom: 2vh;
+    }
+
+    .hero img{
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .description h1{
+        font-size: 5vw;
+    }
+
+    .description p{
+        font-size: 2.5vw;
+    }
+
+    .lifeTools{
+        padding: 6vh 6vw 1vh 6vw;
+    }
+
+    .lifeTools h1{
+        font-size: 5vw;
+    }
+
+    .card{
+        padding: 1vh 2vw 1vh 10vw;
+        background: #ffffff;
+    }
+
+    .card span{
+        color: black;
+        font-size: 3vw;
+    }
+
+    .card img{
+        width: 12vw;
+        height: 12vw;
+        margin-right: 3vw;
+    }
+
+    .card h3{
+        font-size: 4vw;
+    }
+
+    .card p{
+        font-size: 2vw;
+        color: #666;
+    }
+
+}

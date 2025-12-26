@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background: linear-gradient(to bottom right, #0F2027, #11232B, #192F37, #203A43, #213A44);
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400;
+}
+
+.studyMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255,255,255,0.5 ));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle {
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #8a8a8a;
+}
+
+.subjectSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    font-size: 2vw;
+}
+
+.subjectSelect input{
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    background-color: #dcdcdc;
+    border-radius: 0.5vw;
+}
+
+.card{
+    width: 80vw;
+    margin: 5vh 10vw;
+    background: #E3E3E3;
+    color: black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.card h2{
+    text-align: center;
+    letter-spacing: 0.1vw;
+    margin-bottom: 3vh;
+    font-size: 2vw;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    gap: 1vw;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.row input {
+    padding: 1%;
+}
+
+.calcBtn {
+    display: block;
+    margin: 1vh auto 0;
+    padding: 1vh 2vw;
+    border-radius: 9999px;
+    font-size: 1.5vw;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calcBtn:hover {
+    transform: translateY(-2px);
+    background-color: #f5f5f5;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.calcBtn:active {
+    transform: translateY(0);
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    min-height: 5vh;
+    text-align: center;
+    padding: 2vh 15vw;
+    font-size: 1.3vw;
+}
+
+.result ul{
+    margin-bottom: 2vh;
+}
+
+.result li{
+    list-style: none;
+}
+
+.result hr{
+    height: 4px;
+    background-color: #333;
+    border: none;  
+}
+
+@media (max-width: 1024px) {
+    .title{
+        font-size: 9vw;
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 10vw;
+    }
+
+    .subjectSelect label{
+        font-size: 3.5vw;
+    }
+
+    .subjectSelect input{
+        font-size: 3vw;
+        width: 25vw;
+        border-radius: 1.5vw;
+        padding: 0 2vw;
+    }
+
+    .calcBtn{
+        display: block;
+        margin: 1vh auto 0;
+        padding: 1vh 2vw;
+        border-radius: 9999px;
+        font-size: 2vw;
+    }
+
+    .card h2{
+        font-size: 4vw;
+    }
+
+    .result h2{
+        margin-bottom: 1vh;
+    }
+
+    .result ul{
+        margin-bottom: 2vh;
+        font-size: 2.5vw;
+    }
+
+    .result p{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:460px) {
+    .card{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .row{
+        font-size: 2.8vw;
+    }
+
+    .row input{
+        height: 2vh;
+        width: 23vw;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/studyGPA.css">
+    <link rel="icon" type="image/png" href="images/studyFavicon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png">
+        <a href="index.html"><div>The<br>Student<br>Hub</div></a>
+
+        <div class="headerLinks">
+            <div class="study">
+                <a href="study.html" class="studyMain">STUDY</a>
+                <div class="studyContent">
+                    <a href="studyAssignment.html">Assignment Tracker</a><br>
+                    <a href="studyGPA.html">GPA Calculator</a><br>
+                    <a href="studyFlashCard.html">Flash Card</a><br>
+                    <a href="studyNotepad.html">NotePad</a><br>
+                    <a href="studyResourceManager.html">Resource Manager</a><br>
+                </div>
+            </div>
+
+            <div class="life">
+                <a href="life.html" class="lifeMain">LIFE</a>
+                <div class="lifeContent">
+                    <a href="lifeSchulte.html">Schulte Grid</a><br>
+                    <a href="lifeMoney.html">Money Manager</a><br>
+                    <a href="lifeTimetable.html">Timetable</a><br>
+                    <a href="lifeCalendar.html">Month Calendar</a><br>
+                    <a href="lifePomodoro.html">Pomodoro Timer</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="about">ABOUT</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="title">GPA Calculator</div>
+            <div class="subtitle">
+                Calculate your GPA quickly by entering your subjects and marks.
+            </div>
+        </div>
+
+        <div class="subjectSelect">
+            <label>Select the number of your subjects:</label>
+            <input type="number" min="1" id="subjectNum" value="1">
+        </div>
+
+        <div class="card">
+            <h2>Enter The Details</h2>
+            <div id="subjects"></div>
+            <button class="calcBtn">Calculate</button>
+        </div>
+
+        <div class="card result">
+            <h2>RESULTS</h2>
+        </div>
+    </main>
+    <script type="module" src="script/studyGPA.js"></script>
+
+    <footer>
+        <img src="images/icon.png">
+        <div>The<br>Student<br>Hub</div>
+        <div class="copyright">
+            Made by YT Sin | &copy; COPYRIGHT 2025
+        </div>
+    </footer>
+</body>
+</html>

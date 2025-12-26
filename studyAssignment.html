@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/studyAssignment.css">
+    <link rel="icon" type="image/png" href="images/studyFavicon.png">
+    <title>Assignment Tracker</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png">
+        <a href="index.html"><div>The<br>Student<br>Hub</div></a>
+        <div class="headerLinks">
+            <div class="study">
+                <a href="study.html" class="studyMain">STUDY</a>
+                <div class="studyContent">
+                    <a href="studyAssignment.html">Assignment Tracker</a><br>
+                    <a href="studyGPA.html">GPA Calculator</a><br>
+                    <a href="studyFlashCard.html">Flash Card</a><br>
+                    <a href="studyNotepad.html">NotePad</a><br>
+                    <a href="studyResourceManager.html">Resource Manager</a><br>
+                </div>
+            </div>
+
+            <div class="life">
+                <a href="life.html" class="lifeMain">LIFE</a>
+                <div class="lifeContent">
+                    <a href="lifeSchulte.html">Schulte Grid</a><br>
+                    <a href="lifeMoney.html">Money Manager</a><br>
+                    <a href="lifeTimetable.html">Timetable</a><br>
+                    <a href="lifeCalendar.html">Month Calendar</a><br>
+                    <a href="lifePomodoro.html">Pomodoro Timer</a>
+                </div>
+            </div>
+            <a href="about.html" class="about">ABOUT</a>
+        </div>  
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="title">ASSIGNMENT TRACKER</div>
+            <div class="subtitle"> A webpage that allows you to list out your assignments for easier time management and planning.</div>
+        </div>
+
+        <div class="step">
+            <h1>STEP 1 : CREATE ASSIGNMENT</h1>
+            <div class="formBox">
+                <div class="formRow">
+                    <label>1. NAME:</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formRow">
+                    <label>2. DESCRIPTION:</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <div class="formRow">
+                    <label>3. DUE DATE:</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="formRow">
+                    <label>4. CLASS:</label>
+                    <input type="text" id="class">
+                </div>
+
+                <button id="createBtn">CREATE</button>
+            </div>
+        </div>
+
+        <div class="step">
+            <h1>STEP 2 : VIEW HERE</h1>
+
+            <div class="assignmentBox" id="assignmentBox">
+                <div class="assignmentHeader">
+                    <span>ASSIGNMENTS 📁</span>
+                    <label for="status">Status: </label>
+                    <select id="filterStatus">
+                        <option>ALL</option>
+                        <option>DONE</option>
+                        <option>PENDING</option>
+                    </select>
+                </div>
+
+                <div id="assignmentList"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/icon.png">
+        <div>The<br>Student<br>Hub</div>
+        <div class="copyright">
+            Made by YT Sin | &copy; COPYRIGHT 2025
+        </div>
+    </footer>
+</body>
+<script src="script/studyAssignment.js"></script>
+</html>

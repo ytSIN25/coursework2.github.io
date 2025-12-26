@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background: linear-gradient(to bottom left, black, #181818, #303030, #2C2C2C);
+    color: white;
+}
+
+.studyMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255,255,255,0.5 ));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle{
+    margin-top: 1vh;
+    font-size: 1.2vw;
+    color: #8a8a8a;
+}
+
+.step{
+    margin: 10vh 10vw;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.step h1{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+
+.formBox{
+    width: 60vw;
+    background: #3a3a3a;
+    padding: 3vh 3vw;
+    border-radius: 1vw;
+    border: #e1e0db 3px solid;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.formRow label{
+    width: 30%;
+    font-size: 1vw;
+}
+
+.formRow input,
+.formRow textarea{
+    width: 70%;
+    background: transparent;
+    border: #fafafa 2px solid;
+    color: white;
+    padding: 0.8vh 1vw;
+    font-family: inherit;
+}
+
+.formRow textarea{
+    height: 8vh;
+    resize: none;
+}
+
+#createBtn{
+    margin-top: 3vh;
+    width: 50%;
+    height: 5vh;
+    border-radius: 999px;
+    border: none;
+    background: linear-gradient(135deg, #6a8cff, #5ad9ff);
+    color: black;
+    font-size: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#createBtn:hover{
+    background: linear-gradient(135deg, #5ad9ff, #6a8cff);
+    font-size: 1.05vw;
+}
+
+#createBtn:active{
+    background: linear-gradient(135deg, #b9d4f0, #4dd3ff);
+    transform: translateY(3px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.assignmentBox{
+    background: #3a3a3a;
+    border: #fafafa 2px solid;
+    padding: 3vh 3vw;
+    border-radius: 1vw;
+}
+
+.assignmentBox label{
+    margin-left: auto;
+    margin-right: 1vw;
+}
+
+.assignmentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+.assignmentHeader span{
+    font-size: 1.5vw;
+}
+
+.assignmentHeader select{
+    border-radius: 999px;
+    padding: 0.5vh 1vw;
+}
+
+.assignmentItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    padding: 1vh 1vw;
+}
+
+.assignmentInfo h2{
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.assignmentInfo p{
+    font-size: 0.9vw;
+    color: #bdbdbd;
+    margin: 0.5vh 0 0 0;
+}
+
+.assignmentAction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5vh;
+}
+
+.actionTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+.assignmentAction select {
+    border-radius: 999px;
+    padding: 0.5vh 1vw;
+    background: #2c2c2c;
+    color: white;
+    border: 2px solid #fafafa;
+}
+
+.due {
+    font-size: 0.8vw;
+    color: #caff5a;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+.deleteBtn {
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.deleteBtn:hover {
+    background: #ff1a1a;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 6vw;
+    }
+
+    .subtitle{
+        padding: 0 10vw;
+        font-size: 2vw;
+    }
+
+    .step{
+        margin: 5vh 4vw;
+    }
+
+    .step h1{
+        font-size: 4.5vw;
+    }
+
+    #createBtn{
+        font-size: 3vw;
+    }
+
+    #createBtn:active{
+        font-size: 3vw;
+    }
+
+    .formBox,
+    .assignmentBox{
+        width: 100%;
+    }
+
+    .formRow label{
+        font-size: 2.5vw;
+    }
+
+    .assignmentHeader span{
+        font-size: 3vw;
+    }
+
+    .assignmentItem{
+        margin-bottom: 1vh;
+    }
+
+    .assignmentInfo h2{
+        font-size: 2.5vw;
+    }
+
+    .assignmentInfo p{
+        font-size: 1.8vw;
+    }
+
+    .assignmentAction select {
+        border-radius: 1vw;
+    }
+
+    .due {
+        font-size: 1.5vw;
+    }
+
+    .deleteBtn {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 10vw;
+    }
+
+    .subtitle{
+        padding: 0 10vw;
+        font-size: 4vw;
+    }
+
+    .step h1{
+        font-size: 4.5vw;
+    }
+
+    #createBtn{
+        font-size: 3vw;
+    }
+
+    .formBox,
+    .assignmentBox{
+        border-radius: 5vw;
+    }
+
+    .formRow input,
+    .formRow textarea{
+        border-width: 1px ;
+    }
+
+    .formRow label{
+        font-size: 2.6vw;
+    }
+
+    .assignmentItem{
+        margin-bottom: 1vh;
+    }
+
+    .assignmentInfo h2{
+        font-size: 3.5vw;
+    }
+
+    .assignmentInfo p{
+        font-size: 2.5vw;
+    }
+
+    .assignmentHeader span{
+        font-size: 4.5vw;
+    }
+
+    .assignmentAction select {
+        font-size: 2vw;
+        border-radius: 1vw;
+    }
+
+    .due {
+        margin-right: 5vw;
+        font-size: 2.5vw;
+    }
+
+    .deleteBtn {
+        width: 4vw;
+        height: 4vw;    
+        font-size: 2vw;
+    }
+}
+

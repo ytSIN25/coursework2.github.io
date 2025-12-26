@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,395;1,395&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url(../images/studyBackground.png);
+    background-size: cover;
+    background-position: center;
+    color: #d7d7d7;
+    text-align: center;
+    font-size: 8.5vw;
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5vh 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 15px 50px rgba(0, 0, 0, 0.6);
+    font-size: 8vw;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero{
+    margin: 10vh 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.hero img{
+    width: 40vw;
+    margin-right: 2vw;
+}
+
+.description, .selection{
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description h1{
+    font-size: 3vw;
+}
+
+.description p{
+    font-size: 1.2vw;
+    color: #c0c0c0;
+}
+
+.selection{
+    text-align: center;
+    justify-content: center;
+}
+
+.selection h1{
+    font-size: 2.5vw;
+}
+
+.swipeCard{
+    display: flex;
+    padding: 0 10vw;
+}
+
+.swipeCard h1{
+    margin:auto;
+}
+
+.cards{
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 65vh;
+    width: 25vw;
+    margin: 0 1vw;
+    flex-shrink: 0;
+    border-radius: 3vw;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    background-color: #fff;
+}
+
+.card1, .card3{
+    transform: scale(0.95);
+    filter: blur(5px);
+}
+
+.card1 button, .card3 button{
+    pointer-events: none;
+}
+
+.card2{
+    touch-action: pan-y;
+}
+
+.card img{
+    width: 90%;
+    height: 50%;
+    border-radius: 2vw;
+    margin-top: 4.5%;
+}
+
+.card h1{
+    width: 100%;
+    padding: 0 10%;
+    text-align: left;
+    font-size: 2.3vw;
+    color: black;
+}
+
+.card p{
+    width: 100%;
+    padding: 0 10%;
+    text-align: left;
+    font-size: 1vw;
+    color: #757575;
+}
+
+.card button{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: 10%;
+    border-radius: 999px;
+    color: rgb(205, 205, 205);
+    background-color: black;
+    font-size: 1.2vw;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+    transition: all 0.5s ease;
+}
+
+.card2 button:hover{
+    bottom: 5.5%;
+    width: 20.5vw;
+    height: 10.5%;
+    font-size: 1.3vw;
+    color: white;
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+#left, #right{
+    color: #c0c0c0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#left:hover, #right:hover{
+    color: white;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 12vw;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 0px 10vw;
+        margin-bottom: 10vh;
+    }
+
+    .hero img{
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .hero h1{
+        font-size: 4vw;
+    }
+
+    .hero p{
+        font-size: 2.5vw;
+    }
+
+    .selection h1{
+        font-size: 4vw;
+    }
+
+    .swipeCard{
+        padding: 0px;
+    }
+
+    .cards{
+        width: 100vw;
+    }
+
+    .card{
+        width: 60%;
+    }
+
+    .card h1{
+        font-size: 5vw;
+    }
+
+    .card p{
+        font-size: 3vw;
+    }
+
+    .card button{
+        width: 80%;
+        font-size: 3vw;
+        box-shadow: 8px 8px 10px rgba(0,0,0,0.8);
+    }
+
+    #left, #right{
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .title{
+        font-size: 11vw;
+        padding: 0;
+        box-shadow: 0 0 10px 50px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero{
+        padding: 0px 3vw;
+    }
+
+    .hero h1{
+        font-size: 6vw;
+    }
+
+    .hero p{
+        font-size: 4vw;
+    }
+
+    .selection h1{
+        font-size: 8vw;
+    }
+
+    .card{
+        height: 55vh;
+    }
+
+    .card h1{
+        font-size: 7vw;
+    }
+
+    .cards{
+        height: 60vh;
+    }
+}

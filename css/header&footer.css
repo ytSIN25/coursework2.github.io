@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+/*header*/
+header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    margin-top: 5vh;
+    font-size: 1.2vw;
+    background-color: black;
+    color: rgb(207, 207, 207);
+    display: flex;
+    align-items: center;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    width: 70vw;
+    z-index: 99;
+}
+
+header img{
+    width: 6%;
+    margin: 1.1vh 1vw 1.1vh 5vw;
+}
+
+header a{
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: white;
+}
+
+.headerLinks{
+    margin-left: auto;
+    margin-right: 3vw;
+    display: flex;
+}
+
+.headerLinks a{
+    margin: 0 1.5vw;
+}
+
+.study, .life{
+    position: relative;
+    width: fit-content;
+}
+
+.studyMain, .lifeMain{
+    position: relative;
+    display: inline-block;
+}
+
+.studyContent, .lifeContent{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    background-color: black;
+    min-width: max-content;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999999;
+    font-size: 1.1vw;
+}
+
+.studyContent a, .lifeContent a{
+    display: block;
+    padding: 5px 5px;
+    white-space: nowrap;
+    text-decoration: none; 
+}
+
+.studyMain::after, .lifeMain::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 99px;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.study:hover .studyMain::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.study:hover .studyMain{
+    color: white;
+}
+
+.study:hover .studyContent{
+    display: block;
+}
+
+.studyContent a:hover, .lifeContent a:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.life:hover .lifeMain{
+    color: white;
+}
+
+.life:hover .lifeMain::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.life:hover .lifeContent{
+    display: block;
+}
+
+.about{
+    position: relative;
+    display: inline-block;
+}
+
+.about::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 99px;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.about:hover{
+    color: white;
+}
+
+.about:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media screen and (max-width: 450px) {
+    header{
+        margin-top: 10%;
+        width: 90vw;
+        font-size: 3vw;
+    }
+
+    header img{
+        margin: 0.3vh 3vw 0.3vh 10vw;
+        width: 10%;
+    }
+}
+
+/* Footer */
+footer{
+    border: #C0BEBE 3px solid;
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+    padding: 1.5vh 10vh;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1vw;
+}
+
+footer img{
+    width: 4vw;
+    margin-right: 1vw;
+}
+
+.copyright{
+    margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+    footer{
+        border-radius: 5vw 5vw 0 0 ;
+        padding: 0.8vh 7vw;
+        font-size: 2vw;
+    }
+
+    footer img{
+        width: 10vw;
+    }
+}

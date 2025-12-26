@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,395;1,395&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url(../images/indexBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #d7d7d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 8.5vw;
+}
+
+.subtitle{
+    color: #A9A9A9;
+    font-size: 1.5vw;
+}
+
+.Information{
+    padding: 5vh 6vw;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information img{
+    width: 40vw;
+}
+
+.information h1{
+    font-size: 3.5vw;
+}
+
+.information p{
+    font-size: 1.2vw;
+    color: #A9A9A9;
+}
+
+.information a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.2vw;
+    position: relative;
+}
+
+.information a::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5%;
+    left: 0;
+    background-color: aqua;
+    border-radius: 99px;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.information1 img {
+    margin-right: 3vw;
+}
+
+.information2{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.information2 img {
+    margin-left: 3vw;
+}
+
+.information a:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+@media (max-width: 1024px) {
+    .banner{
+        font-size: 12vw;    
+    }
+
+    .subtitle{
+        font-size: 3vw;
+    }
+
+    .information{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .information img{
+        width: 70%;
+        margin: 0;
+    }
+
+    .information div{
+        width: 61vw;
+        text-align: left;
+    }
+
+    .information h1{
+        font-size: 5vw;
+    }
+
+    .information p{
+        font-size: 2vw;
+    }
+
+    .information a{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .subtitle{
+        font-size: 3.5vw;
+    }
+
+    .information img{
+        width: 90%;
+        margin: 0;
+    }
+
+    .information div{
+        width: 75vw;
+        text-align: left;
+    }
+
+    .information h1{
+        margin-top: 1vw;
+        font-size: 6vw;
+    }
+
+    .information p{
+        font-size: 3vw;
+    }
+
+    .information a{
+        font-size: 3.5vw;
+    }
+}
