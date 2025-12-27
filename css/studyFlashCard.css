@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background-image: url(../images/studyFlashCardBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400;
+}
+
+.studyMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255,255,255,0.5 ));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle {
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #8a8a8a;
+}
+
+.inputSection{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.inputSection h2{
+    font-size: 3vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 0.5vh;
+}
+
+.inputSection p{
+    font-size: 1.5vw;
+    color: #c6c6c6;
+    margin-bottom: 2vh;
+}
+
+.inputCard{
+    width: 70vw;
+    height: 20vh;
+    margin: auto;
+    background: #F3EEDD;
+    color: black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.inputCol h3{
+    font-size: 1.8vw;
+    letter-spacing: 0.1em;
+}
+
+.divider{
+    width: 2px;
+    height: 70%;
+    background: #333;
+}
+
+.inputTable{
+    width: 70vw;
+    margin: auto;
+    background: #F3EEDD;
+    color: black;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.tableHeader{
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 0.15em;
+    padding: 2vh 0;
+    border-bottom: 2px solid #333;
+}
+
+.inputTable textarea{
+    border: none;
+    resize: none;
+    padding: 2vh 2vw;
+    font-size: 1.1vw;
+    font-family: inherit;
+    height: 16vh;
+    outline: none;
+    background: #F3EEDD;
+}
+
+.inputTable textarea:nth-child(3){
+    border-right: 2px solid #333;
+}
+
+.testSection{
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.testSection h2{
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+}
+
+.hint{
+    font-size: 1.5vw;
+}
+
+.testWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 3vh;
+}
+
+.cardStack{
+    position: relative;
+    height: 65vh;
+    width: 42vh;  
+}
+
+.flashCard{
+    position: absolute;
+    inset: 0;
+    background: #F3EEDD;
+    border-radius: 5vw;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+
+.flashCard1{
+    z-index: 3;
+}
+
+.flashCard2{
+    z-index: 2;
+    transform: translate(2vw, 0.8vh) rotate(5deg);
+}
+
+.flashCard3{
+    z-index: 1;
+    transform: translate(3vw, 1.7vh) rotate(10deg);
+}
+
+.word{
+    color: black;
+    font-size: 2.5vw;
+    letter-spacing: 0.1em;
+    margin-top: auto;
+}
+
+.line{
+    border-bottom: 2px dashed #333;
+    margin: 35% 0;
+}
+
+.meaning{
+    font-size: 1.5vw;
+    color: #444;
+    margin-bottom: auto;
+}
+
+.correct, .wrong{
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.correct{
+    color: #2ECC71;
+}
+
+.wrong{
+    color: #E74C3C;
+}
+
+@media (max-width: 1024px) {
+    .title{
+        font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 10vw;
+    }
+
+    .inputTable{
+        width: 90vw;
+    }
+
+    .inputSection h2, .inputSection p{
+        text-align: left;
+        margin-left: 7vw;
+    }
+
+    .tableHeader{
+        font-size: 2.5vw;
+        padding: 1vh 0;
+    }
+
+    .inputTable textarea{
+        padding: 1vh 3vw;
+        font-size: 1.6vw;
+    }
+
+    .testSection h2{
+        font-size: 5vw;
+    }
+
+    .hint{
+        font-size: 3vw;
+    }
+
+    .cardStack{
+        height: 50vh;
+        width: 33vh;  
+    }
+
+    .word{
+        font-size: 4vw;
+    }
+
+    .meaning{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:460px) {
+    .inputSection h2{
+        font-size: 4vw;
+    }
+
+    .inputSection p{
+        font-size: 3vw;
+    }
+
+    .inputTable textarea{
+        font-size: 2vw;
+    }
+
+    .inputSection{
+        margin-bottom: 20vh;
+    }
+
+    .cardStack{
+        height: 35vh;
+        width: 24vh;  
+    }
+
+}

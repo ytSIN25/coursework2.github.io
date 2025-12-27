@@ -127,6 +127,7 @@ body{
 @media (max-width: 1024px) {
     .title{
         font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
     }
 
     .subtitle{
