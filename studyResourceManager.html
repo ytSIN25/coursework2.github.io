@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Manager</title>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/studyResourceManager.css">
+    <link rel="icon" type="image/png" href="images/studyFavicon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png">
+        <a href="index.html"><div>The<br>Student<br>Hub</div></a>
+
+        <div class="headerLinks">
+            <div class="study">
+                <a href="study.html" class="studyMain">STUDY</a>
+                <div class="studyContent">
+                    <a href="studyAssignment.html">Assignment Tracker</a><br>
+                    <a href="studyGPA.html">GPA Calculator</a><br>
+                    <a href="studyFlashCard.html">Flash Card</a><br>
+                    <a href="studyNotepad.html">NotePad</a><br>
+                    <a href="studyResourceManager.html">Resource Manager</a><br>
+                </div>
+            </div>
+
+            <div class="life">
+                <a href="life.html" class="lifeMain">LIFE</a>
+                <div class="lifeContent">
+                    <a href="lifeSchulte.html">Schulte Grid</a><br>
+                    <a href="lifeMoney.html">Money Manager</a><br>
+                    <a href="lifeTimetable.html">Timetable</a><br>
+                    <a href="lifeCalendar.html">Month Calendar</a><br>
+                    <a href="lifePomodoro.html">Pomodoro Timer</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="about">ABOUT</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="title">Resource Manager</div>
+            <div class="subtitle">
+                The Full and Compact Resource for CS Students.
+            </div>
+        </div>
+
+        <div class="resourceSection">
+            <div class="resourceToolbar">
+                <div class="toolbar">
+                    <label>TYPE:</label>
+                    <select id="typeFilter">
+                        <option value="all">ALL</option>
+                        <option value="book">BOOK</option>
+                        <option value="website">WEBSITE</option>
+                    </select>
+                </div>
+
+                <div class="toolbar">
+                    <label>MODULE:</label>
+                    <select id="moduleFilter">
+                        <option value="all">ALL</option>
+                        <option value="0001">0001</option>
+                        <option value="0030">0030</option>
+                        <option value="0032">0032</option>
+                        <option value="0033">0033</option>
+                        <option value="0035">0035</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="resourceGrid" id="resourceGrid"></div>
+        </div>
+    </main>
+    <script src="script/studyResourceManager.js"></script>
+
+    <footer>
+        <img src="images/icon.png">
+        <div>The<br>Student<br>Hub</div>
+        <div class="copyright">
+            Made by YT Sin | &copy; COPYRIGHT 2025
+        </div>
+    </footer>
+</body>
+</html>

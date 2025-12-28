@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #2C3E50, #869198);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400; 
+}
+
+.studyMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255, 255, 255, 0.5));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle{
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #c5c5c5;
+}
+
+.resourceSection{
+    padding: 6vh 8vw 10vh;
+}
+
+.resourceToolbar{
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-bottom: 6vh;
+}
+
+.toolbar{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #ffffff;
+    font-size: 2vw;
+}
+
+.toolbar select{
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5vh 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.resourceGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3vw;
+}
+
+.resourceCard{
+    background: #FFF8F3;
+    border-radius: 18px;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.cardImage{
+    height: 20vh;
+    border-radius: 14px;
+    margin: 2vh 1.5vw 1.5vh;
+    background: #FFF8F3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardContent{
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.cardTitle{
+    font-size: 1.15vw;
+    letter-spacing: 0.1vw;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.cardDesc{
+    font-size: 0.8vw;
+    color: #4e4e4e;
+    margin-top: 0.6vh;
+    flex-grow: 1;
+}
+
+.cardFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardModule{
+    font-size: 0.8vw;
+    color: #4e4e4e;
+}
+
+.cardBtn{
+    border: 2px solid #bbb;
+    background: transparent;
+    border-radius: 20px;
+    padding: 0.5vh 2.5vw;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cardBtn:hover{
+    transform: translateY(-3px);
+    background: #2c2c2c;
+    color: white;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 10vw;
+    }
+    
+    .resourceToolbar{
+        margin-bottom: 2vh;
+    }
+
+    .toolbar{
+        font-size: 4vw;
+    }
+
+    .toolbar select{
+        font-size: 2vw;
+    }
+
+    .resourceGrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .resourceCard{
+        height: 38vh;
+    }
+
+    .cardImage{
+        height: 17vh;
+    }
+
+    .cardContent{
+        height: 17vh;
+    }
+
+    .cardTitle{
+        font-size: 2.6vw;
+    }
+
+    .cardDesc,
+    .cardModule{
+        font-size: 1.8vw;
+    }
+    
+    .cardBtn{
+        padding: 0.5vh 5vw;
+        font-size: 2vw;
+        background: #2c2c2c;
+        color: white;
+    }
+}
+
+@media (max-width:460px){
+    .title{
+        font-size: 13vw;
+    }
+
+    .resourceCard{
+        height: 30vh;
+        padding: 0 1vw;
+    }
+
+    .cardImage{
+        height: 12vh;
+    }
+
+    .cardContent{
+        height: 14vh;
+    }
+
+    .cardTitle{
+        font-size: 3vw;
+    }
+
+    .cardDesc,
+    .cardModule{
+        font-size: 2vw;
+    }
+    
+    .cardBtn{
+        padding: 0.5vh 5vw;
+        font-size: 2vw;
+        background: #2c2c2c;
+        color: white;
+    }
+}
