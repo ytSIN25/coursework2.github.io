@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #636FA4, #E8CBC0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400; 
+}
+
+.studyMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255, 255, 255, 0.5));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle {
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #c5c5c5;
+}
+
+.toolbar{
+    display: flex;
+    gap: 0.8vw;
+    margin: 0 8vw 2vh 8vw;
+}
+
+.toolbar button{
+    padding: 1vh 1.5vw;
+    border-radius: 10px;
+    border: none;
+    background: #ffffffaa;
+    cursor: pointer;
+}
+
+.toolbar button:hover{
+    background: #fff;
+}
+
+.toolbar .danger{
+    background: #ffb3b3;
+}
+
+.notepad{
+    background: linear-gradient(180deg,#d8d4e4,#ebe6f0);
+    margin: 0 7vw;
+    border-radius: 20px;
+    padding: 2vw;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.notepad textarea{
+    width: 100%;
+    height: 45vh;
+    border: none;
+    resize: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: inherit;
+}
+
+.statusBar{
+    display: flex;
+    margin: 3vh 8vw 1vh;
+    font-size: 1.3vw;
+    color: #333;
+    align-items: center;
+}
+
+.words{
+    margin-right: 2vw;
+}
+
+.saved{
+    color: #30983f;
+}
+
+
+@media (max-width: 1024px) {
+    .title{
+        font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 10vw;
+    }
+
+    .toolbar{
+        gap: 1.5vw;
+    }
+    
+    .toolbar button{
+        font-size: 2vw;
+    }
+
+    .statusBar{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:460px) {
+    .title{
+        font-size: 12vw;
+    }
+
+    .toolbar{
+        gap: 3vw;
+    }
+
+    .toolbar button{
+        font-size: 4vw;
+        padding: 1vh 3vw;
+    }
+
+    .notepad{
+        padding: 2vh 4vw;
+    }
+
+    .notepad textarea{
+        height: 65vh;
+    }
+
+    .statusBar{
+        font-size: 4vw;
+    }
+}
