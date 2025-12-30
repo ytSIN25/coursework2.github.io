@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #134E5E, #71B280);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400; 
+}
+
+.lifeMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255, 255, 255, 0.5));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle{
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #c5c5c5;
+}
+
+.schulteContainer{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schulteInfo{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+}
+
+.schulteText{
+    width: 50%;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 2vw;
+}
+
+.schulteText h1{
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+.schulteText span{
+    font-size: 1.5vw;
+    color: #cfcfcf;
+}
+
+.schulteControl{
+    margin: 2vh 0;
+}
+
+.time{
+    display: flex;
+    width: 47vh;
+    margin-bottom: 1vh;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+.schulteTimer{
+    background: white;
+    color: #333;
+    margin-left: auto;
+    padding: 0.8vh 4vw;
+    border-radius: 999px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.schulteGrid{
+    width: 50vh;
+    height: 50vh;
+    background: #FFF8F3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border-radius: 1.5vw;
+    overflow: hidden;
+}
+
+.cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    font-size: 1.7vw;
+    color: #2c2c2c;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover{
+    background-color: #bcbcbc;
+}
+
+.cell:active{
+    background-color: #ffe8e8;
+}
+
+.schulteReset{
+    margin-top: 2vh;
+    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 0.6vh 6vw;
+    border-radius: 999px;
+    font-size: 1.4vw;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.schulteReset:hover{
+    background: rgb(255, 244, 244);
+    color: #2c2c2c;
+    transform: translateY(-5px);
+}
+
+.schulteReset:active{
+    transform: translateY(0px);
+}
+
+.hintText{
+    margin: 2vh 0;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 10vw;
+    }
+
+    .schulteInfo{
+        flex-direction: column;
+        margin-bottom: 0vh;
+    }
+    
+    .schulteText{
+        width: 100%;
+        margin-bottom: 10vh;
+        padding: 0 6vw;
+    }
+
+    .schulteText h1{
+        font-size: 4vw;
+        margin-bottom: 1vh;
+    }
+
+    .schulteText span, .time, .cell{
+        font-size: 2.5vw;
+    }
+
+    .schulteReset, .hintText{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:460px){
+    .title{
+        font-size: 13vw;
+    }
+
+    .schulteText{
+        margin-bottom: 8vh;
+    }
+
+    .schulteText h1{
+        font-size: 6vw;
+    }
+
+    .schulteText span, .time, .cell{
+        font-size: 3.3vw;
+    }
+
+    .time{
+        width: 88vw;
+    }
+
+    .schulteGrid{
+        width: 90vw;
+        height: 90vw;
+        border-radius: 4vw;
+    }
+
+    .schulteReset, .hintText{
+        font-size: 3vw;
+    }
+}
