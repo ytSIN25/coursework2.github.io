@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom, #654EA3, #EAAFC8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400; 
+}
+
+.lifeMain{
+    color: #09FFFF;
+}
+
+.banner{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vw;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0px 15px 25px rgba(255, 255, 255, 0.5));
+    text-align: center;
+    color: #ffffff;
+}
+
+.subtitle{
+    margin-top: 1vh;
+    font-size: 1.3vw;
+    color: #c5c5c5;
+}
+
+.card{
+    width: 80%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 2.5vw;
+    margin: 5vh auto;
+    color: white;
+}
+
+.card h2{
+    letter-spacing: 0.15em;
+    margin-bottom: 25px;
+}
+
+.expenseForm{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 15px;
+}
+
+.expenseForm input,
+.expenseForm select{
+    padding: 0.8vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.expenseForm button{
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    background: #fbf3f3;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease,
+}
+
+.expenseForm button:hover{
+    transform: translateY(-3px);
+}
+
+.expenseForm button:active{
+    transform: translateY(1px) scale(0.97);
+}
+
+.expenseTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenseTable th,
+.expenseTable td{
+    padding: 10px;
+    text-align: center;
+}
+
+.expenseTable th{
+    color: #3D365C;
+    font-size: 1.7vw;
+}
+
+.expenseTable td{
+    font-size: 1.2vw;
+    max-width: 18vw;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.deleteBtn{
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deleteBtn:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    color: #ff2e2e;
+}
+
+.deleteBtn:active{
+    font-weight: bold;
+    transform: scale(0.9);
+}
+
+.summary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.summaryText{
+    text-align: left;
+}
+
+.summaryText p{
+    font-size: 1.3vw;
+    margin: 1.5vh 0;
+}
+
+@media (max-width: 1024px){
+    .title{
+        font-size: 9vw;
+        filter: drop-shadow(0px 25px 45px rgba(255, 255, 255, 0.9))
+    }
+
+    .subtitle{
+        font-size: 3vw;
+        padding: 0 15vw;
+    }
+
+    .card{
+        width: 90%;
+        padding: 4vw;
+    }
+
+    .card h2{
+        font-size: 2.6vw;
+    }
+
+    .expenseForm{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1vh 3vw;
+    }
+
+    .expenseForm button{
+        grid-column: span 2;
+        justify-self: center;
+        width: 40%;
+        padding: 1vh 0;
+    }
+
+    .expenseForm input,
+    .expenseForm select{
+        border-radius: 1.5vw;
+        padding: 1.2vw;
+        font-size: 1.6vw;
+    }
+
+    .expenseTable th{
+        font-size: 2.5vw;
+    }
+
+    .expenseTable td{
+        font-size: 2vw;
+    }
+
+    .deleteBtn{
+        font-size: 2vw;
+    }
+
+    .summary{
+        gap: 30px;
+    }
+
+    canvas{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .summaryText p{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:460px){
+    .title{
+        font-size: 14vw;
+    }
+
+    .card h2{
+        font-size: 4vw;
+    }
+
+    .expenseForm{
+        gap: 2vh 3vw;
+    }
+
+    .expenseForm input,
+    .expenseForm select{
+        padding: 1vh 2vw;
+        font-size: 1.6vw;
+    }
+
+    .summary{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    canvas{
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .summaryText{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .summaryText p{
+        font-size: 4vw;
+        margin: 1vh 0;
+        white-space: normal;
+    }
+}
