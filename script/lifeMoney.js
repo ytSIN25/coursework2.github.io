@@ -97,14 +97,22 @@ function drawPieChart(){
 }
 
 document.getElementById("createExpense").onclick = () => {
-    if (!nameInput.value || !amountInput.value){
-        alert("Please Enter A Name and Value.")
-        return
-    };
+    const amount = Number(amountInput.value);
+
+    if (!nameInput.value || amountInput.value === ""){
+        alert("Please enter a name and amount.");
+        return;
+    }
+
+    if (amount < 0){
+        alert("Amount cannot be negative.");
+        amountInput.value = 0;
+        return;
+    }
 
     expenseList.push({
         name: nameInput.value,
-        amount: Number(amountInput.value),
+        amount: amount,
         category: categoryInput.value,
         note: noteInput.value
     });
