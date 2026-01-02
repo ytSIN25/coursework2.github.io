@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/lifeTimetable.css">
+    <link rel="icon" type="image/png" href="images/lifeFavicon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png">
+        <a href="index.html"><div>The<br>Student<br>Hub</div></a>
+
+        <div class="headerLinks">
+            <div class="study">
+                <a href="study.html" class="studyMain">STUDY</a>
+                <div class="studyContent">
+                    <a href="studyAssignment.html">Assignment Tracker</a><br>
+                    <a href="studyGPA.html">GPA Calculator</a><br>
+                    <a href="studyFlashCard.html">Flash Card</a><br>
+                    <a href="studyNotepad.html">NotePad</a><br>
+                    <a href="studyResourceManager.html">Resource Manager</a><br>
+                </div>
+            </div>
+
+            <div class="life">
+                <a href="life.html" class="lifeMain">LIFE</a>
+                <div class="lifeContent">
+                    <a href="lifeSchulte.html">Schulte Grid</a><br>
+                    <a href="lifeMoney.html">Money Manager</a><br>
+                    <a href="lifeTimetable.html">Timetable</a><br>
+                    <a href="lifeCalendar.html">Month Calendar</a><br>
+                    <a href="lifePomodoro.html">Pomodoro Timer</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="about">ABOUT</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="title">Timetable</div>
+            <div class="subtitle">
+                Arrange Your Week with The Timetable by Hour.
+            </div>
+        </div>
+
+        <div class="timetableContainer">
+            <div class="dragArea">
+                <div class="dragTitle">DRAG AND DROP (PC) OR TAP TO PLACE (MOBILE)<br>RIGHT CLICK OR LONG PRESS TO CLEAR</div>
+                <div class="dragItems">
+                    <div class="dragItem tt-eat" draggable="true">EAT<br>REST<br>SLEEP</div>
+                    <div class="dragItem tt-school" draggable="true">SCHOOL</div>
+                    <div class="dragItem tt-study" draggable="true">STUDY</div>
+                    <div class="dragItem tt-life" draggable="true">LIFE</div>
+                </div>
+            </div>
+
+            <div class="timetable">
+                <div class="timeHeader"></div>
+                <div class="dayHeader">Mon</div>
+                <div class="dayHeader">Tue</div>
+                <div class="dayHeader">Wed</div>
+                <div class="dayHeader">Thu</div>
+                <div class="dayHeader">Fri</div>
+                <div class="dayHeader">Sat</div>
+                <div class="dayHeader">Sun</div>
+            </div>
+
+            <div class="timetableFooter">
+                <div class="timetableNote">
+                    Timetable is important for managing your time well. Right click or Long Press to clear the time slot.
+                </div>
+                <button class="resetBtn">RESET</button>
+            </div>
+        </div>
+    </main>
+    <script src="script/lifeTimetable.js"></script>
+
+    <footer>
+        <img src="images/icon.png">
+        <div>The<br>Student<br>Hub</div>
+        <div class="copyright">
+            Made by YT Sin | &copy; COPYRIGHT 2025
+        </div>
+    </footer>
+</body>
+</html>
