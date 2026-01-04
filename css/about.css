@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(160deg, #0a0a0a, #1a1a1a);
+    color: #e0e0e0;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 8vw;
+    color: #d7d7d7;
+    background: linear-gradient(to bottom, rgba(10,10,10,0.8), rgba(26,26,26,0.9));
+}
+
+.subtitle{
+    color: #B0B0B0;
+    font-size: 1.5vw;
+    margin-top: 12px;
+}
+
+.aboutContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.aboutSection {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.aboutSection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+    background: #2a2a2a;
+}
+
+.aboutSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.aboutSection h2:hover {
+    color: #a3d2ff;
+}
+
+.aboutSection p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #cfcfcf;
+    transition: color 0.3s ease;
+}
+
+.aboutSection:hover p {
+    color: #e0e0e0;
+}
+
+.aboutList {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.aboutList li {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.aboutSection:hover .aboutList li {
+    color: #d1eaff;
+}
+
+.featureGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.featureBox {
+    background: #1f1f1f;
+    border: 1px solid #2c2c2c;
+    border-radius: 16px;
+    padding: 28px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.featureBox:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: 1px solid #a3d2ff;
+}
+
+.featureBox h3 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #f0f0f0;
+}
+
+.featureBox li {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .banner{
+        font-size: 12vw;
+    }
+    .subtitle{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .subtitle{
+        font-size: 3.5vw;
+    }
+}
