@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
 
 body{
-    background-image: linear-gradient(to bottom, #000046, #1CB5E0);
+    background-image: linear-gradient(to bottom, #800080, #FFC0CB);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -43,7 +43,7 @@ body{
 }
 
 .calendarControls{
-    background: #4FB7B3;
+    background: #FFC400;
     padding: 1.2vh 2vw;
     display: flex;
     gap: 1vw;

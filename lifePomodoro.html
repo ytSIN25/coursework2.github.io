@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/lifePomodoro.css">
+    <link rel="icon" type="image/png" href="images/lifeFavicon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png">
+        <a href="index.html"><div>The<br>Student<br>Hub</div></a>
+
+        <div class="headerLinks">
+            <div class="study">
+                <a href="study.html" class="studyMain">STUDY</a>
+                <div class="studyContent">
+                    <a href="studyAssignment.html">Assignment Tracker</a><br>
+                    <a href="studyGPA.html">GPA Calculator</a><br>
+                    <a href="studyFlashCard.html">Flash Card</a><br>
+                    <a href="studyNotepad.html">NotePad</a><br>
+                    <a href="studyResourceManager.html">Resource Manager</a><br>
+                </div>
+            </div>
+
+            <div class="life">
+                <a href="life.html" class="lifeMain">LIFE</a>
+                <div class="lifeContent">
+                    <a href="lifeSchulte.html">Schulte Grid</a><br>
+                    <a href="lifeMoney.html">Money Manager</a><br>
+                    <a href="lifeTimetable.html">Timetable</a><br>
+                    <a href="lifeCalendar.html">Month Calendar</a><br>
+                    <a href="lifePomodoro.html">Pomodoro Timer</a>
+                </div>
+            </div>
+
+            <a href="about.html" class="about">ABOUT</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="title">Pomodoro Timer</div>
+            <div class="subtitle">
+                A Timer to Help You Maximize Your Productivity
+            </div>
+        </div>
+
+        <div class="pomodoroWrapper">
+            <div class="pomodoroContainer">
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="h1">▲</div>
+                    <div class="digit" id="h1">0</div>
+                    <div class="arrow down" data-unit="h1">▼</div>
+                </div>
+
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="h2">▲</div>
+                    <div class="digit" id="h2">0</div>
+                    <div class="arrow down" data-unit="h2">▼</div>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="m1">▲</div>
+                    <div class="digit" id="m1">0</div>
+                    <div class="arrow down" data-unit="m1">▼</div>
+                </div>
+
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="m2">▲</div>
+                    <div class="digit" id="m2">0</div>
+                    <div class="arrow down" data-unit="m2">▼</div>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="s1">▲</div>
+                    <div class="digit" id="s1">0</div>
+                    <div class="arrow down" data-unit="s1">▼</div>
+                </div>
+
+                <div class="timeBox">
+                    <div class="arrow up" data-unit="s2">▲</div>
+                    <div class="digit" id="s2">0</div>
+                    <div class="arrow down" data-unit="s2">▼</div>
+                </div>
+            </div>
+
+            <button class="startBtn" id="startBtn">START</button>
+        </div>
+
+        <div class="pomodoroText">
+            <div class="infoText">
+                <h1>What is Pomodoro Timer</h1>
+                The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. This technique uses a kitchen timer to break work into intervals which is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer that Cirillo used while he was a university student.
+            </div>
+
+            <div class="infoText">
+                <h1>How to Use</h1>
+                Set up your desired time on top, and start focusing your job or homework. After 25 minute, you can take a short break as the timer shows, after two sets of work and break you can have a 30 minute of long rest. During the focus 25 minute, do your best to deter any distraction and just focus on the thing you want to do to maximize your efficiency.
+            </div>
+        </div>
+    </main>
+    <script src="script/lifePomodoro.js"></script>
+
+    <footer>
+        <img src="images/icon.png">
+        <div>The<br>Student<br>Hub</div>
+        <div class="copyright">
+            Made by YT Sin | &copy; COPYRIGHT 2025
+        </div>
+    </footer>
+</body>
+</html>
