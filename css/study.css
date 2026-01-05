@@ -226,6 +226,21 @@ body{
         box-shadow: 8px 8px 10px rgba(0,0,0,0.8);
     }
 
+    .card button:hover{
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10%;
+        width: 80%;
+        font-size: 3vw;
+        box-shadow: 8px 8px 10px rgba(0,0,0,0.8);
+        border-radius: 999px;
+        color: rgb(205, 205, 205);
+        background-color: black;
+        transition: all 0.5s ease;
+    }
+
     #left, #right{
         display: none;
     }
