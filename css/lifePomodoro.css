@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:wght@400&display=swap');
 
 body{
-    background-image: linear-gradient(to bottom, #222, #444);
+    background-image: linear-gradient(135deg, #2B2F5B 0%, #181A22 100%);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;

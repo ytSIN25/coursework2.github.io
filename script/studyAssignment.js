@@ -25,7 +25,7 @@ function createAssignment() {
     const ClassName = document.getElementById("class").value.trim();
 
     // No input
-    if (!Name || !Description || !Due || !ClassName) {
+    if (!Name || !Description || !ClassName) {
         alert("Please enter valid text to create assignment.");
         return;
     }

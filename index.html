@@ -38,7 +38,51 @@
             <a href="about.html" class="about">ABOUT</a>
         </div>  
     </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!window.matchMedia("(hover: none)").matches) return;
 
+            const menus = [
+                { wrapper: ".study", link: ".studyMain" },
+                { wrapper: ".life", link: ".lifeMain" }
+            ];
+
+            menus.forEach(menu => {
+                const wrapper = document.querySelector(menu.wrapper);
+                const mainLink = wrapper.querySelector(menu.link);
+                let lastTap = 0;
+
+                mainLink.addEventListener("click", (e) => {
+                    const now = Date.now();
+                    const tapGap = now - lastTap;
+
+                    if (tapGap < 300 && tapGap > 0) {
+                        window.location.href = mainLink.getAttribute("href");
+                    } else {
+                        e.preventDefault();
+                        document.querySelectorAll(".studyContent, .lifeContent").forEach(menu => {
+                            if (!wrapper.contains(menu)) menu.style.display = "none";
+                        });
+
+                        const dropdown = wrapper.querySelector("div");
+                        dropdown.style.display =
+                            dropdown.style.display === "block" ? "none" : "block";
+                    }
+
+                    lastTap = now;
+                });
+            });
+
+            document.addEventListener("click", (e) => {
+                if (!e.target.closest(".study, .life")) {
+                    document.querySelectorAll(".studyContent, .lifeContent").forEach(menu => {
+                        menu.style.display = "none";
+                    });
+                }
+            });
+        });
+    </script>
+    
     <main>
         <div class="banner">
             <div class="title">

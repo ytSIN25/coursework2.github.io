@@ -75,11 +75,11 @@ body{
     margin-bottom: 2vh;
 }
 
-.row input {
+.row input{
     padding: 1%;
 }
 
-.calcBtn {
+.calcBtn{
     display: block;
     margin: 1vh auto 0;
     padding: 1vh 2vw;

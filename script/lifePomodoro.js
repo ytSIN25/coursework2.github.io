@@ -88,7 +88,7 @@ startBtn.addEventListener("click", () => {
 
 function startWorkBlock(){
     phase = "work";
-    document.body.style.background = "#8b0000";
+    document.body.style.background = "linear-gradient(to bottom, #222, #444)";
     startBtn.textContent = "STOP";
     running = true;
 
@@ -152,6 +152,6 @@ function stopTimer(){
     running = false;
     phase = "idle";
     startBtn.textContent = "START";
-    document.body.style.background = "linear-gradient(to bottom, #222, #444)";
+    document.body.style.background = "linear-gradient(135deg, #2B2F5B 0%, #181A22 100%)";
     document.title = "Pomodoro Timer";
 }
