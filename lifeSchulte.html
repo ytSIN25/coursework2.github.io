@@ -42,43 +42,44 @@
     </header>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            if (!window.matchMedia("(hover: none)").matches) return;
-
             const menus = [
-                { wrapper: ".study", link: ".studyMain" },
-                { wrapper: ".life", link: ".lifeMain" }
+                { wrapper: ".study", link: ".studyMain", content: ".studyContent" },
+                { wrapper: ".life", link: ".lifeMain", content: ".lifeContent" }
             ];
 
             menus.forEach(menu => {
                 const wrapper = document.querySelector(menu.wrapper);
                 const mainLink = wrapper.querySelector(menu.link);
-                let lastTap = 0;
+                const dropdown = wrapper.querySelector(menu.content);
 
-                mainLink.addEventListener("click", (e) => {
-                    const now = Date.now();
-                    const tapGap = now - lastTap;
+                let tappedOnce = false;
 
-                    if (tapGap < 300 && tapGap > 0) {
-                        window.location.href = mainLink.getAttribute("href");
-                    } else {
+                mainLink.addEventListener("touchend", (e) => {
+                    if (!tappedOnce) {
                         e.preventDefault();
-                        document.querySelectorAll(".studyContent, .lifeContent").forEach(menu => {
-                            if (!wrapper.contains(menu)) menu.style.display = "none";
+                        tappedOnce = true;
+
+                        menus.forEach(m => {
+                            if (m.wrapper !== menu.wrapper) {
+                                const otherContent = document.querySelector(m.content);
+                                if (otherContent) otherContent.style.display = "none";
+                            }
                         });
 
-                        const dropdown = wrapper.querySelector("div");
-                        dropdown.style.display =
-                            dropdown.style.display === "block" ? "none" : "block";
+                        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        setTimeout(() => tappedOnce = false, 500);
+                    } else {
+                        window.location.href = mainLink.getAttribute("href");
                     }
-
-                    lastTap = now;
                 });
             });
 
-            document.addEventListener("click", (e) => {
+            // If touches outside
+            document.addEventListener("touchstart", (e) => {
                 if (!e.target.closest(".study, .life")) {
-                    document.querySelectorAll(".studyContent, .lifeContent").forEach(menu => {
-                        menu.style.display = "none";
+                    menus.forEach(menu => {
+                        const dropdown = document.querySelector(menu.content);
+                        if (dropdown) dropdown.style.display = "none";
                     });
                 }
             });
