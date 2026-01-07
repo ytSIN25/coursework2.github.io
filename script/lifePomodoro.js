@@ -4,6 +4,7 @@ let originalWorkSeconds = 0;
 let remainingWorkSeconds = 0;
 let phase = "idle";
 let workSessionCount = 0;
+const resetBtn = document.getElementById("resetBtn");
 
 const startBtn = document.getElementById("startBtn");
 const digits = {
@@ -155,3 +156,21 @@ function stopTimer(){
     document.body.style.background = "linear-gradient(135deg, #2B2F5B 0%, #181A22 100%)";
     document.title = "Pomodoro Timer";
 }
+
+document.querySelectorAll(".controlBtn[data-min]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        if (running) stopTimer();
+        const totalSeconds = parseInt(btn.dataset.min) * 60;
+
+        originalWorkSeconds = totalSeconds;
+        remainingWorkSeconds = totalSeconds;
+        setDigits(totalSeconds);
+    });
+});
+
+resetBtn.addEventListener("click", () => {
+    stopTimer();
+    originalWorkSeconds = 0;
+    remainingWorkSeconds = 0;
+    setDigits(0);
+});

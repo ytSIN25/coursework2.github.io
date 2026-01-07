@@ -38,7 +38,7 @@ body{
 }
 
 .pomodoroWrapper{
-    min-height: 60vh;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +100,28 @@ body{
     background: white;
     color: black;
     box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.quickControls{
+    margin-top: 12px;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.controlBtn{
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.controlBtn:hover{
+    background: #666;
 }
 
 .pomodoroText{
@@ -164,6 +186,10 @@ body{
         font-size: 2.5vw;
         padding: 2vh 12vw;
         border-radius: 6vw;
+    }
+
+    .controlBtn{
+        font-size: 2.2vw;
     }
 
     .pomodoroText{

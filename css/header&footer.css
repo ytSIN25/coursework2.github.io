@@ -170,6 +170,11 @@ header a:hover{
         margin: 0.3vh 3vw 0.3vh 10vw;
         width: 10%;
     }
+
+    .studyContent, .lifeContent{
+        padding: 5px;
+        font-size: 2vw;
+    }
 }
 
 /* Footer */
